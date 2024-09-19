@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Самостійна робота</title>
-    <link rel="icon" type="image/x-icon" href="./images/лампочка.png">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <h2>Це заголовок 2</h2>
     <h3>Це заголовок 3</h3>
     <a href="https://w3schoolsua.github.io/">Це посилання</a>
-    <img src="./images/1210.jpg" alt="W3Schools" width="200" height="130">
+    <img src="./images/w3schools.jpg" alt="W3Schools" width="104" height="142">
     <button>Натисніть мене</button>
     <h2>Невпорядкований список HTML</h2>
     <ul>
@@ -41,8 +41,8 @@
     <p>Це параграф<br> з обривом рядка.</p>
     <h2>1.5. HTML Атрибути. </h2>
     <a href="https://w3schoolsua.github.io/">Це посилання</a>
-    <img src="./images/vidy-programmirovaniya.jpg" width="200" height="140">
-    <p style="color:red">Це параграф червоного кольору.</p>
+    <img src="./images/img_girl.jpg" width="500" height="600" alt="Дівчина в жакеті">
+    <p style="color:rgb(0, 200, 255)">Це параграф блакитного кольору.</p>
     <p title='Я виринаюча підказка'>
         Це параграф.
     </p>
@@ -95,7 +95,7 @@
     <a href="https://www.w3schools.com/html/" target="_top">HTML5 Підручник!</a>
     <br>
     <a href="index.html">
-        <img src="./images/1210.jpg" alt="HTML уроки для початківців" width="200" height="130">
+        <img src="./images/smiley.gif" alt="HTML підручник" style="width:42px;height:42px;">
     </a>
     <br>
     <a href="https://www.w3schools.com/html/" title="Перейти на уроки по HTML для початківців">Уроки по HTML для
@@ -110,16 +110,16 @@
     <a href="https://w3schoolsua.github.io/html/index.html">HTML підручник</a>
 
     <h2>1.8. HTML Зображення. </h2>
-    <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
-    <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
-    <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+    <img src="./images/img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+    <img src="./images/html5.gif" alt="HTML5 Icon" width="128" height="128">
+    <img src="./images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
     <a href="index.html">
-        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+        <img src="./images/smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
     </a>
-    <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    <p><img src="./images/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
         Зображення буде плавати праворуч від тексту.</p>
 
-    <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    <p><img src="./images/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
         Зображення буде плавати ліворуч від тексту.</p>
 
 
@@ -133,27 +133,32 @@
     </map>
 
     <h2>1.8.2. HTML Фонові зображення. </h2>
-    <div style="background-image: url('img_girl.jpg');"></div>
-    <style>
-        body {
-            background-image: url('img_girl.jpg');
-        }
-    </style>
-    <style>
-        body {
-            background-image: url('../images/example_img_girl.jpg');
-        }
-    </style>
-
+    <h2>Зображення в якості фону</h2>
+    
+    <div style="background-image: url('./images/img_girl.jpg'); height:500px">
+        <p>
+            Ви можете вказати фонові зображення<br>
+            для будь-якого видимого елемента HTML.<br>
+            У цьому прикладі фонове зображення<br>
+            вказано для елемента div.<br>
+            За замовчуванням фонове зображення<br>
+            повториться в напрямку (ях)<br>
+            де воно менше елемента<br>
+            в якому воно зазначено.<br>
+            (Спробуйте змінити розмір<br>
+            вікна браузера, щоб побачити, як<br>
+            фонове зображення поводиться.
+        </p>
+    </div>
     <h2>1.8.3. HTML елемент < picture>
     </h2>
     <picture>
-        <source media="(min-width: 650px)" srcset="img_food.jpg">
-        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <source media="(min-width: 650px)" srcset="./images/img_girl.jpg">
+        <source media="(min-width: 465px)" srcset="./images/img_car.jpg">
         <img src="./images/workplace.jpg">
     </picture>
     <h2>1.8.4. HTML Favicon / Фавікон. </h2>
-    <img src="./images/лампочка.png" width="100" height="100">
+    <img src="./images/favicon-32x32.png" width="100" height="100">
 
     <h2>1.9. HTML Таблиці. </h2>
     <table style="width:100%; border: 1px solid black;">
@@ -174,7 +179,7 @@
         </tr>
     </table>
     <br>
-    <table style="width:100%; border: 1px solid black; padding: 15px; ">
+    <table style="width:100%; border: 1px solid rgb(242, 9, 188); padding: 15px; ">
         <tr>
             <th>Name</th>
             <th colspan="2">Telephone</th>
@@ -186,7 +191,7 @@
         </tr>
     </table>
     <br>
-    <table style="width:100%; border: 1px solid black;  text-align: left;">
+    <table style="width:100%; border: 1px solid rgb(58, 2, 2);  text-align: left;">
         <tr>
             <th>Name:</th>
             <td>Bill Gates</td>
@@ -200,7 +205,7 @@
         </tr>
     </table>
 
-    <table style="width:100%; border: 1px solid black; border-spacing: 5px;">
+    <table style="width:100%; border: 1px solid rgb(1, 76, 35); border-spacing: 5px;">
         <caption>Monthly savings</caption>
         <tr>
             <th>Month</th>
@@ -216,7 +221,7 @@
         </tr>
     </table>
     <br>
-    <table style="width:100%; border: 1px solid black;">
+    <table style="width:100%; border: 1px solid rgb(31, 235, 12);">
         <tr>
             <th>Name</th>
             <th colspan="2">Telephone</th>
@@ -256,7 +261,7 @@
         #myTable th,
         #myTable td {
             border: 1px solid black;
-            border-color: #089797;
+            border-color: #2600ff;
         }
     </style>
 
@@ -496,7 +501,7 @@
     <h2>1.9.7. HTML Група стовпців таблиці. </h2>
     <table>
         <colgroup>
-            <col span="2" style="background-color: #D6EEEE">
+            <col span="2" style="background-color: #57f5f5">
         </colgroup>
         <tr>
             <th>MON</th>
@@ -509,7 +514,7 @@
     <table>
         <colgroup>
             <col span="2">
-            <col span="1" style="background-color: pink">
+            <col span="1" style="background-color: rgb(247, 47, 103)">
         </colgroup>
         <tr>
             <th>MON</th>
@@ -842,7 +847,7 @@
         <input type="submit" formtarget="_blank" value="Надіслати в новому вікні">
     </form>
 
-    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+    <input type="image" src="./images/img_submit.gif" alt="Submit" width="48" height="48">
 
     <input list="browsers">
 
